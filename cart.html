@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Leaf &amp; Co1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">Leaf &amp; Co1</a>
+      <nav class="site-nav">
+        <a href="index.html">Shop</a>
+        <a href="cart.html">Cart (<span class="badge" id="nav-cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Your cart</h1>
+    <p id="empty-message" hidden>Your cart is empty</p>
+    <ul class="cart-list" id="cart-list"></ul>
+
+    <div class="summary">
+      <p class="subtotal" id="subtotal">Subtotal: $0.00</p>
+      <button class="btn" type="button" id="checkout-button" hidden>Proceed to checkout</button>
+    </div>
+  </main>
+</body>
+</html>

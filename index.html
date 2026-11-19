@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Leaf &amp; Co1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="index.html">Leaf &amp; Co1</a>
+      <nav class="site-nav">
+        <a href="index.html">Shop</a>
+        <a href="cart.html">Cart (<span class="badge" id="nav-cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Shop our plants</h1>
+
+    <div class="toolbar">
+      <label for="category-filter">Category</label>
+      <select id="category-filter">
+        <option value="All">All</option>
+        <option value="Indoor">Indoor</option>
+        <option value="Outdoor">Outdoor</option>
+        <option value="Succulents">Succulents</option>
+      </select>
+    </div>
+
+    <section class="grid" id="product-grid">
+      <article class="card" id="card-monstera" data-category="Indoor" data-id="monstera" data-name="Monstera" data-price="24.00">
+        <div class="card-emoji" aria-hidden="true">🌿</div>
+        <h2 id="name-monstera">Monstera</h2>
+        <p class="card-category" id="category-monstera">Indoor</p>
+        <p class="card-price" id="price-monstera">$24.00</p>
+        <button class="btn" type="button" id="add-monstera">Add to cart</button>
+      </article>
+
+      <article class="card" id="card-snake-plant" data-category="Indoor" data-id="snake-plant" data-name="Snake Plant" data-price="18.50">
+        <div class="card-emoji" aria-hidden="true">🪴</div>
+        <h2 id="name-snake-plant">Snake Plant</h2>
+        <p class="card-category" id="category-snake-plant">Indoor</p>
+        <p class="card-price" id="price-snake-plant">$18.50</p>
+        <button class="btn" type="button" id="add-snake-plant">Add to cart</button>
+      </article>
+
+      <article class="card" id="card-lavender" data-category="Outdoor" data-id="lavender" data-name="Lavender" data-price="12.00">
+        <div class="card-emoji" aria-hidden="true">💐</div>
+        <h2 id="name-lavender">Lavender</h2>
+        <p class="card-category" id="category-lavender">Outdoor</p>
+        <p class="card-price" id="price-lavender">$12.00</p>
+        <button class="btn" type="button" id="add-lavender">Add to cart</button>
+      </article>
+
+      <article class="card" id="card-rosemary" data-category="Outdoor" data-id="rosemary" data-name="Rosemary" data-price="9.50">
+        <div class="card-emoji" aria-hidden="true">🌱</div>
+        <h2 id="name-rosemary">Rosemary</h2>
+        <p class="card-category" id="category-rosemary">Outdoor</p>
+        <p class="card-price" id="price-rosemary">$9.50</p>
+        <button class="btn" type="button" id="add-rosemary">Add to cart</button>
+      </article>
+
+      <article class="card" id="card-aloe-vera" data-category="Succulents" data-id="aloe-vera" data-name="Aloe Vera" data-price="11.00">
+        <div class="card-emoji" aria-hidden="true">🌵</div>
+        <h2 id="name-aloe-vera">Aloe Vera</h2>
+        <p class="card-category" id="category-aloe-vera">Succulents</p>
+        <p class="card-price" id="price-aloe-vera">$11.00</p>
+        <button class="btn" type="button" id="add-aloe-vera">Add to cart</button>
+      </article>
+
+      <article class="card" id="card-jade-plant" data-category="Succulents" data-id="jade-plant" data-name="Jade Plant" data-price="15.00">
+        <div class="card-emoji" aria-hidden="true">🍀</div>
+        <h2 id="name-jade-plant">Jade Plant</h2>
+        <p class="card-category" id="category-jade-plant">Succulents</p>
+        <p class="card-price" id="price-jade-plant">$15.00</p>
+        <p class="card-stock" id="stock-jade-plant">Out of stock</p>
+        <button class="btn" type="button" id="add-jade-plant" disabled>Add to cart</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
